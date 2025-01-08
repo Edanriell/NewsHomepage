@@ -6,4 +6,11 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+        <Folder Include="Shared\Ui\Link\Ui\"/>
+        <Folder Include="Widgets\PrimaryNavigation\Ui\" />
+        <Folder Include="wwwroot\images\raster\posts\"/>
+        <Folder Include="wwwroot\images\vector\"/>
+    </ItemGroup>
+
 </Project>
