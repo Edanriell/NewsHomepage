@@ -1,0 +1,41 @@
+:root {
+	--almost-white: #fffdfa;
+	--dark-space-blue: #00001a;
+	--gunmetal: #5e607a;
+	--light-vermillion: #f15d51;
+	--silver: #c5c6ce;
+	--yellow: #e9aa52;
+
+	--font-family: "Inter";
+}
+
+html {
+	font-size: 6.25%;
+	scroll-behavior: smooth;
+	font-family: var(--font-family), sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	font-size: 16em;
+	text-rendering: geometricPrecision;
+	min-width: 375rem;
+
+	@media (width >= 1440px) {
+		overflow-x: hidden;
+	}
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
