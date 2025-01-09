@@ -1,3 +1,4 @@
+@using Client.Widgets.MobileNavigation.Ui
 @using Client.Widgets.PrimaryNavigation.Ui
 <header class="header">
 	<a class="header__link-logotype" href="#">
@@ -8,11 +9,6 @@
 			      fill="currentColor"/>
 		</svg>
 	</a>
-	<PrimaryNavigation></PrimaryNavigation>
-	<button class="mobile-navigation__trigger">
-		<span class="visually-hidden">Toggle mobile navigation</span>
-		<div class="mobile-navigation__trigger-bar mobile-navigation__top-trigger-bar"></div>
-		<div class="mobile-navigation__trigger-bar mobile-navigation__middle-trigger-bar"></div>
-		<div class="mobile-navigation__trigger-bar mobile-navigation__bottom-trigger-bar"></div>
-	</button>
+	<PrimaryNavigation/>
+	<MobileNavigationTrigger/>
 </header>
