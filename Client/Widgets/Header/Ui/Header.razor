@@ -1,3 +1,4 @@
+@using Client.Widgets.PrimaryNavigation.Ui
 <header class="header">
 	<a class="header__link-logotype" href="#">
 		<svg class="header__logotype" width="65" height="40" viewBox="0 0 65 40" fill="none"
@@ -7,25 +8,7 @@
 			      fill="currentColor"/>
 		</svg>
 	</a>
-	<nav class="primary-navigation">
-		<ul class="primary-navigation__links-list links-list">
-			<li class="links-list__item">
-				<a class="links-list__link" href="#">Home</a>
-			</li>
-			<li class="links-list__item">
-				<a class="links-list__link" href="#">New</a>
-			</li>
-			<li class="links-list__item">
-				<a class="links-list__link" href="#">Popular</a>
-			</li>
-			<li class="links-list__item">
-				<a class="links-list__link" href="#">Trending</a>
-			</li>
-			<li class="links-list__item">
-				<a class="links-list__link" href="#">Categories</a>
-			</li>
-		</ul>
-	</nav>
+	<PrimaryNavigation></PrimaryNavigation>
 	<button class="mobile-navigation__trigger">
 		<span class="visually-hidden">Toggle mobile navigation</span>
 		<div class="mobile-navigation__trigger-bar mobile-navigation__top-trigger-bar"></div>
@@ -33,7 +16,3 @@
 		<div class="mobile-navigation__trigger-bar mobile-navigation__bottom-trigger-bar"></div>
 	</button>
 </header>
-
-@code {
-
-}

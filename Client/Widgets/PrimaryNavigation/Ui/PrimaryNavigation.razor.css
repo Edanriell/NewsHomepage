@@ -1,0 +1,32 @@
+.primary-navigation {
+	position: relative;
+	display: none;
+
+	@media (width >= 768px) {
+		display: block;
+	}
+}
+
+.primary-navigation__navigation-links-list {
+	position: relative;
+}
+
+.navigation-links-list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-right: -20rem;
+}
+
+.navigation-links-list__item {
+	position: relative;
+}
+
+.navigation-links-list__link {
+	font-family: var(--font-family), sans-serif;
+	font-weight: 400;
+	font-size: 15rem;
+	line-height: 173%;
+	color: var(--gunmetal);
+	padding: 20rem;
+}

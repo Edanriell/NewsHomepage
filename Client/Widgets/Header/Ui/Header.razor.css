@@ -73,38 +73,3 @@
 	bottom: 0;
 	left: 0;
 }
-
-/*Pull out to separate component PrimaryNavigation*/
-
-.primary-navigation {
-	position: relative;
-	display: none;
-
-	@media (width >= 768px) {
-		display: block;
-	}
-}
-
-.primary-navigation__links-list {
-	position: relative;
-}
-
-.links-list {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	margin-right: -20rem;
-}
-
-.links-list__item {
-	position: relative;
-}
-
-.links-list__link {
-	font-family: var(--font-family), sans-serif;
-	font-weight: 400;
-	font-size: 15rem;
-	line-height: 173%;
-	color: var(--gunmetal);
-	padding: 20rem;
-}
