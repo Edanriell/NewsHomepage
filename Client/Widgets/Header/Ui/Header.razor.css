@@ -5,6 +5,10 @@
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+
+	@media (width >= 768rem) {
+		margin: 0 32rem;
+	}
 }
 
 .header__link-logotype {
