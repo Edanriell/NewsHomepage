@@ -1,7 +1,11 @@
 ﻿@page "/"
+@using Client.Pages.Home.Ui.Sections.LeadArticle.Ui
 
-<PageTitle>Home</PageTitle>
+<PageTitle>News</PageTitle>
 
-<h1>Hello, world!</h1>
- 
-Welcome to your new app.
+<section class="home-page">
+	<h1 class="visually-hidden">News</h1>
+	<div class="home-page__item-group home-page__item-group--type--two-columns">
+		<LeadArticle/>
+	</div>
+</section>

@@ -8,7 +8,8 @@
 
     <ItemGroup>
         <Folder Include="Shared\Ui\Link\Ui\"/>
-        <Folder Include="wwwroot\images\raster\posts\"/>
+        <Folder Include="Widgets\NewArticles\Ui\"/>
+        <Folder Include="Widgets\TopArticles\Ui\"/>
         <Folder Include="wwwroot\images\vector\"/>
     </ItemGroup>
 
