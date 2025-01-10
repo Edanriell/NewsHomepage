@@ -7,7 +7,7 @@
 	}
 
 	@media (width >= 1440px) {
-		margin: 0 165rem 129rem 165rem;
+		margin: 71rem 165rem 129rem 165rem;
 	}
 }
 
@@ -20,6 +20,13 @@
 	flex-direction: column;
 	row-gap: 32rem;
 	counter-reset: article-counter;
+
+	@media (width >= 1440px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		column-gap: 30rem;
+	}
 }
 
 .top-articles-list__list-item {
