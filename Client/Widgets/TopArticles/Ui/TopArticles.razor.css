@@ -24,8 +24,10 @@
 
 .top-articles-list__list-item {
 	position: relative;
-	display: flex;
-	flex-direction: row;
+	display: grid;
+	grid-template-columns: 100rem 219rem;
+	grid-template-rows: auto;
+	align-items: center;
 	column-gap: 24rem;
 }
 
