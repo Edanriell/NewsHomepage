@@ -15,6 +15,7 @@
 	font-size: 32rem;
 	line-height: 100%;
 	color: var(--yellow);
+	margin-bottom: 35rem;
 }
 
 .new-articles-section__new-articles-list {
@@ -29,13 +30,17 @@
 
 .new-articles-list__item {
 	position: relative;
-	margin-bottom: 29rem;
-	border-bottom: 1rem solid darkred;
+	padding-bottom: 29rem;
+	border-bottom: 1rem solid var(--gunmetal);
+
+	&:last-child {
+		padding-bottom: unset;
+		border-bottom: unset;
+	}
 }
 
 .new-article-list__item-link {
 	position: relative;
-	padding-bottom: 8rem;
 }
 
 .new-article-list__item-title {
@@ -44,6 +49,7 @@
 	font-size: 20rem;
 	line-height: 120%;
 	color: var(--almost-white);
+	padding-bottom: 8rem;
 }
 
 .new-article-list__item-text {
