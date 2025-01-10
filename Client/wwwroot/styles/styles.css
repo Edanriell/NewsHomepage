@@ -20,7 +20,6 @@ body {
 	position: relative;
 	font-size: 16em;
 	text-rendering: geometricPrecision;
-	min-width: 375rem;
 	background: var(--almost-white);
 
 	@media (width >= 1440px) {
