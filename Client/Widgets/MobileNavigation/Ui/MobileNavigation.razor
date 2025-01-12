@@ -1,0 +1,30 @@
+@using Client.Widgets.PrimaryNavigation.Ui
+@rendermode InteractiveServer
+
+<button class="mobile-navigation__trigger @MobileNavigationTriggerClasses" @onclick="ToggleMobileMenuState">
+	<span class="visually-hidden">Toggle mobile navigation</span>
+	<div class="mobile-navigation__trigger-bar"></div>
+	<div class="mobile-navigation__trigger-bar"></div>
+	<div class="mobile-navigation__trigger-bar"></div>
+</button>
+
+<div class="mobile-navigation__overlay @MobileNavigationOverlayClasses" @onclick="ToggleMobileMenuState">
+</div>
+
+<div class="mobile-navigation @MobileNavigationClasses">
+	<PrimaryNavigation/>
+</div>
+
+@code {
+	private bool _isMobileMenuOpen = false;
+
+	private string MobileNavigationClasses => _isMobileMenuOpen ? "mobile-navigation--state--opened" : "mobile-navigation--state--closed";
+	private string MobileNavigationOverlayClasses => _isMobileMenuOpen ? "mobile-navigation__overlay--state--visible" : "mobile-navigation__overlay--state--invisible";
+	private string MobileNavigationTriggerClasses => _isMobileMenuOpen ? "mobile-navigation__trigger--state--active" : "mobile-navigation__trigger--state--inactive";
+
+	private void ToggleMobileMenuState()
+	{
+		_isMobileMenuOpen = !_isMobileMenuOpen;
+	}
+
+}
