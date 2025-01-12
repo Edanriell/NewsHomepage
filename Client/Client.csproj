@@ -7,7 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Shared\Ui\Link\Ui\"/>
         <Folder Include="wwwroot\images\vector\"/>
     </ItemGroup>
 
