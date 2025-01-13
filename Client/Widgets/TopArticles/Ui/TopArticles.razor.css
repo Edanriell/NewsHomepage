@@ -79,6 +79,21 @@
 	line-height: 133%;
 	color: var(--dark-space-blue);
 	padding-bottom: 9rem;
+	transition: color 200ms ease-in-out;
+	will-change: color;
+	display: inline-block;
+
+	&:hover {
+		color: var(--light-vermillion);
+	}
+
+	&:focus {
+		color: var(--light-vermillion);
+	}
+
+	&:active {
+		color: var(--light-vermillion);
+	}
 }
 
 .top-articles-list__text {
