@@ -42,12 +42,19 @@
 .navigation-links-list__link {
 	font-family: var(--font-family), sans-serif;
 	font-weight: 400;
-	transition-duration: 200ms;
-	transition-property: color;
-	transition-timing-function: ease-in-out;
+	transition: color 200ms ease-in-out;
 	will-change: color;
+	display: inline-block;
 
 	&:hover {
+		color: var(--light-vermillion);
+	}
+
+	&:focus {
+		color: var(--light-vermillion);
+	}
+
+	&:active {
 		color: var(--light-vermillion);
 	}
 }
