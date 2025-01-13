@@ -1,23 +1,28 @@
-<nav class="primary-navigation">
-	<ul class="primary-navigation__navigation-links-list navigation-links-list">
+<nav class="primary-navigation @PrimaryNavigationClasses">
+	<ul class="primary-navigation__navigation-links-list navigation-links-list @NavigationLinksListClasses">
 		<li class="navigation-links-list__item">
-			<a class="navigation-links-list__link" href="#">Home</a>
+			<a class="navigation-links-list__link @NavigationLinksListLinkClasses" href="#">Home</a>
 		</li>
 		<li class="navigation-links-list__item">
-			<a class="navigation-links-list__link" href="#">New</a>
+			<a class="navigation-links-list__link @NavigationLinksListLinkClasses" href="#">New</a>
 		</li>
 		<li class="navigation-links-list__item">
-			<a class="navigation-links-list__link" href="#">Popular</a>
+			<a class="navigation-links-list__link @NavigationLinksListLinkClasses" href="#">Popular</a>
 		</li>
 		<li class="navigation-links-list__item">
-			<a class="navigation-links-list__link" href="#">Trending</a>
+			<a class="navigation-links-list__link @NavigationLinksListLinkClasses" href="#">Trending</a>
 		</li>
 		<li class="navigation-links-list__item">
-			<a class="navigation-links-list__link" href="#">Categories</a>
+			<a class="navigation-links-list__link @NavigationLinksListLinkClasses" href="#">Categories</a>
 		</li>
 	</ul>
 </nav>
 
 @code {
-	
+	[Parameter] public string? Orientation { get; set; } = "horizontal";
+
+	private string PrimaryNavigationClasses => Orientation == "vertical" ? "primary-navigation--orientation--vertical" : "primary-navigation--orientation--horizontal";
+	private string NavigationLinksListClasses => Orientation == "vertical" ? "navigation-links-list--orientation--vertical" : "navigation-links-list--orientation--horizontal";
+	private string NavigationLinksListLinkClasses => Orientation == "vertical" ? "navigation-links-list__link--size--large navigation-links-list__link--color--dark-space-blue" : "navigation-links-list__link--size--medium navigation-links-list__link--color--gunmetal";
+
 }
