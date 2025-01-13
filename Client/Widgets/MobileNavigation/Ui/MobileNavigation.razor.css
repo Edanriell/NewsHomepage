@@ -28,6 +28,10 @@
 }
 
 .mobile-navigation__trigger--state--active {
+	position: fixed;
+	top: 32rem;
+	right: 16rem;
+
 	:nth-child(2) {
 		top: 50.5%;
 		left: 0;
@@ -79,13 +83,14 @@
 .mobile-navigation {
 	position: fixed;
 	top: 0;
-	right: -100%;
+	right: -72%;
 	width: 68.26%;
 	min-width: 256rem;
 	height: 100vh;
 	background-color: var(--almost-white);
 	transition: transform 0.3s ease;
 	z-index: 99;
+	padding: 144rem 9rem 309rem 24rem;
 }
 
 .mobile-navigation--state--closed {
