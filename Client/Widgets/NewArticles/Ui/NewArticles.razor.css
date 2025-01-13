@@ -59,6 +59,21 @@
 	line-height: 120%;
 	color: var(--almost-white);
 	padding-bottom: 8rem;
+	transition: color 200ms ease-in-out;
+	will-change: color;
+	display: inline-block;
+
+	&:hover {
+		color: var(--yellow);
+	}
+
+	&:focus {
+		color: var(--yellow);
+	}
+
+	&:active {
+		color: var(--yellow);
+	}
 }
 
 .new-article-list__item-text {
