@@ -7,7 +7,24 @@
 	letter-spacing: 0.31em;
 	color: var(--dark-space-blue);
 	text-transform: uppercase;
-	background: var(--light-vermillion);
+	background-color: var(--light-vermillion);
 	padding: 13rem 35rem 11rem 31rem;
 	max-height: 48rem;
+	transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
+	will-change: color, background-color;
+
+	&:hover {
+		color: var(--almost-white);
+		background-color: var(--dark-space-blue);
+	}
+
+	&:focus {
+		color: var(--almost-white);
+		background-color: var(--dark-space-blue);
+	}
+
+	&:active {
+		color: var(--almost-white);
+		background-color: var(--dark-space-blue);
+	}
 }
