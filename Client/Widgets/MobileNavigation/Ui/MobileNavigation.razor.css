@@ -94,9 +94,10 @@
 	min-width: 256rem;
 	height: 100vh;
 	background-color: var(--almost-white);
-	transition: transform 0.3s ease;
 	z-index: 99;
 	padding: 144rem 9rem 309rem 24rem;
+	transition: transform 250ms ease-in-out;
+	will-change: transform;
 }
 
 .mobile-navigation--state--closed {
